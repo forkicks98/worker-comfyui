@@ -59,6 +59,9 @@ RUN if [ -n "${CUDA_VERSION_FOR_COMFY}" ]; then \
       /usr/bin/yes | comfy --workspace /comfyui install --version "${COMFYUI_VERSION}" --nvidia; \
     fi
 
+# Custom nodes for the LTX2.3-10Eros V5 workflow
+RUN comfy --workspace /comfyui node install --mode=remote comfyui-kjnodes rgthree-comfy comfyui-videohelpersuite comfyui-mxtoolkit controlaltai-nodes comfymath 10s-comfy-nodes
+
 # Upgrade PyTorch if needed (for newer CUDA versions)
 RUN if [ "$ENABLE_PYTORCH_UPGRADE" = "true" ]; then \
       uv pip install --force-reinstall torch torchvision torchaudio --index-url ${PYTORCH_INDEX_URL}; \
