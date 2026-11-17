@@ -1,3 +1,7 @@
+# Fork notes (2026-11-17)
+
+- Added custom nodes for the LTX2.3-10Eros V5 workflow (KJNodes, rgthree-comfy, VideoHelperSuite, mxToolkit, ControlAltAI Nodes, ComfyMath, 10S Nodes) and added text_encoders / latent_upscale_models to extra_model_paths. Trigger rebuild for deployment tests.
+
 # [5.3.0](https://github.com/runpod-workers/worker-comfyui/compare/5.2.0...5.3.0) (2025-07-22)
 
 ## 5.10.0
