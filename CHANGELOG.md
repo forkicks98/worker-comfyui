@@ -1,5 +1,6 @@
 # Fork notes (2026-11-17)
 
+- Retry 2026-11-18 09:12 JST: fourth trigger - retry after the morning build hit RunPod's 1800-second (30 min) build-time limit during the final image export step.
 - Retry 2026-11-18 morning JST: third trigger - retry after the 2026-11-17 deployment tests failed because no test GPUs were available (RTX 4090 / B300 SXM6 / RTX PRO 4500).
 - - Added custom nodes for the LTX2.3-10Eros V5 workflow (KJNodes, rgthree-comfy, VideoHelperSuite, mxToolkit, ControlAltAI Nodes, ComfyMath, 10S Nodes) and added text_encoders / latent_upscale_models to extra_model_paths. Trigger rebuild for deployment tests.
 - Retry 2026-11-17 18:05 JST: second trigger - the 17:45 deployment test failed because no RTX 4090 or fallback GPU instances were available.
